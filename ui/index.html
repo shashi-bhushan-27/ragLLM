@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RAG Upload Center</title>
+</head>
+<body>
+  <h2>Upload Document</h2>
+  <input type="file" id="file"/>
+  <button onclick="upload()">Upload</button>
+  <p id="status"></p>
+
+  <script>
+    async function upload(){
+      const f = document.getElementById("file").files[0];
+      const fd = new FormData();
+      fd.append("file", f);
+      const res = await fetch("/upload",{method:"POST",body:fd});
+      const j = await res.json();
+      document.getElementById("status").innerText = j.message || j.error;
+    }
+  </script>
+</body>
+</html>

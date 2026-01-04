@@ -1,10 +1,18 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+fastapi
+uvicorn
+pydantic
+python-dotenv
+
 langchain
-langchain-core
 langchain-community
+langchain-core
+langchain-groq
+
+faiss-cpu
+sentence-transformers
 pypdf
 pymupdf
-sentence-transformers
-faiss-cpu
 chromadb
-langchain-groq
-python-dotenv
+groq
