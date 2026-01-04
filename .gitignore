@@ -16,6 +16,21 @@ data/faiss_store/
 *.pkl
 *.pdf
 *.csv
-# Virtual environments
-.venv
+
+# Python
+__pycache__/
+*.pyc
 .env
+
+# FAISS & Vector DB
+faiss_store/
+data/vector_store/
+*.bin
+*.pkl
+*.sqlite3
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Docker
+__docker_cache__/
