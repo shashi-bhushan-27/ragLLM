@@ -100,6 +100,3 @@
 ## Contributing
 - Fork/branch, open PR with tests and lint passing.
 - Follow code style defined in linters/formatters.
-
-## License
-- Specify project license in `LICENSE` (add if missing).
